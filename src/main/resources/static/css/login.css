@@ -1,0 +1,71 @@
+@charset "EUC-KR";
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 10px;
+    margin: auto;
+    position: relative; /* 절대위치에서 상대위치로 변경 */
+    top: 50%; /* 절대위치를 상대위치로 변경했으므로 여기서는 중앙에 정렬하기 위해 50%로 설정 */
+    transform: translateY(-50%); /* 브라우저 호환성을 위해 다른 접두사 없이 통합된 transform 속성 사용 */
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+/* 로그인폼 높이 조절 */
+#login-top {
+	margin-top: 20.6rem;
+}
+
+/* 모바일 환경에 최적화된 스타일 */
+@media only screen and (max-width: 768px) {
+    /* 로그인 폼을 위로 이동 */
+    #login-top {
+        margin-top: 15rem;
+    }
+}
+
+.mb-3 {
+	margin-top: 15px;
+	text-align: center;
+}
+
+/* 아이디 비밀번호 찾기 */
+.idpw > a {
+	text-decoration: none;
+}
+
+/* form 간격 */
+.form-floating {
+	margin-bottom: 7px;
+}
+
+.btn-primary {
+	color: #1D376C;
+}
+
+/* 세로 작대기 생성 */
+.vertical-line {
+    display: inline-block;
+    width: 1px; 						 /* 선의 너비 조절 */
+    height: 10px; 						 /* 선의 높이 조절 */
+    background-color:rgba(0, 0, 0, 0.2); /* 선의 색상 설정 */
+}
+
+/* 로그인 색상 */
+.fw-normal {
+    color:rgba(0, 0, 0, 0.5); /* 선의 색상 설정 */
+}
+
+/* 아이디, 비밀번호 색상 */
+.form-floating {
+	color:rgba(0, 0, 0, 0.5); /* 선의 색상 설정 */
+}
+
+/* 아이디찾기, 비밀번호 찾기 */
+.idpw > a{
+	color:rgba(0, 0, 0, 0.5); /* 선의 색상 설정 */
+}
+
