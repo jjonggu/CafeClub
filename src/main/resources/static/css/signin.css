@@ -16,7 +16,7 @@ button:focus:not(:focus-visible) {
 
 /* 로그인폼 높이 조절 */
 #signin-top {
-	margin-top: 19.9rem;
+ 	margin-top: 17.8rem; 
 }
 
 /* 모바일 환경에 최적화된 스타일 */

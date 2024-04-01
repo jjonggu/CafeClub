@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.cafe.mapper.UsrMapper">
+
+    <!-- 사용자 등록 -->
+    <insert id="insertSignin" >
+        INSERT INTO USR_T (
+        			USR_NO
+        		  , USR_EMAIL
+        		  , USR_NAME
+        		  , USR_PW
+        		  , USR_PHONE
+        		  , SIGNUP_DT)
+        VALUES (
+        		    USR_SEQ.NEXTVAL
+        	      , #{usrEmail}
+        	      , #{usrName}
+        	      , #{usrPw}
+        	      , #{usrPhone}
+        	      , current_date)
+    </insert>
+</mapper>

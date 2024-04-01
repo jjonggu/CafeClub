@@ -15,25 +15,7 @@ public class CafeController {
 	@GetMapping("/main")
 	public String CafeMain() {
 		return "cafe/main";
-	}
-
-	/**
-	 * @2024-03-27 
-	 * Cafe 로그인 View
-	 */
-	@GetMapping("/login")
-	public String CafeLogin() {
-		return "cafe/login";
-	}
-	
-	/**
-	 * @2024-03-27 
-	 * Cafe 회원가입 View
-	 */
-	@GetMapping("/signin")
-	public String CafeSignin() {
-		return "cafe/signin";
-	}
+	}	
 	
 	/**
 	 * @2024-03-27 

@@ -215,7 +215,7 @@
 				<div class="col mb-5">
 					<div class="card h-100">
 						<!-- Product image-->
-						<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">hot</div>
+						<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">HOT</div>
 						<img class="card-img-top" src="/static/images/hot/초코라떼.png" alt="..." />
 						<!-- Product details-->
 						<div class="card-body p-4">

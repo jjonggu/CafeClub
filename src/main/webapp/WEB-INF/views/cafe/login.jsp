@@ -26,11 +26,11 @@
 			<h1 class="h3 mb-3 fw-normal text-center">로그인</h1>
 
 			<div class="form-floating">
-				<input type="text" class="form-control" name="usrId" id="usrId" placeholder="아이디 입력">
-				<label for="usrId">아이디</label>
+				<input type="text" class="form-control" name="usrEmail" id="usrEmail" placeholder="아이디 입력">
+				<label for="usrEmail">이메일</label>
 			</div>
 			<div class="form-floating">
-				<input type="password" class="form-control" name="usrPw" id="usrPw" placeholder="아이디 입력">
+				<input type="password" class="form-control" name="usrPw" id="usrPw" placeholder="비밀번호 입력">
 				<label for="usrPw">비밀번호</label>
 			</div>
 
@@ -52,6 +52,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	
 	<!-- Core theme JS-->
-	<script src="js/scripts.js"></script>
+	<!-- <script src="js/scripts.js"></script> -->
 </body>
 </html>
