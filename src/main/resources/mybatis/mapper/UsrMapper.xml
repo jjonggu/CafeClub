@@ -19,4 +19,30 @@
         	      , #{usrPhone}
         	      , current_date)
     </insert>
+    
+    <!-- 사용자 조회 -->
+    <select id="getSelectUsrList" >
+    	SELECT USR_NO
+    	     , USR_EMAIL
+         	 , USR_NAME
+             , USR_PW
+             , USR_PHONE
+             , SIGNUP_DT
+          FROM USR_T
+         ORDER BY USR_NO DESC
+    </select>
+    
+    <!-- 사용자 상세 조회 -->
+    <select id="getSelectUsrDetail" >
+    	SELECT USR_NO
+    	     , USR_EMAIL
+         	 , USR_NAME
+             , USR_PW
+             , USR_PHONE
+             , SIGNUP_DT
+          FROM USR_T
+         WHERE USR_EMAIL = #{usrEmail}
+    </select>
+    
+    
 </mapper>

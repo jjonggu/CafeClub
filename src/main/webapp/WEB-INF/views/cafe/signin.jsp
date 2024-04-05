@@ -9,14 +9,8 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <title>CafeClub</title>
-<!-- Favicon-->
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-<!-- Bootstrap icons-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-<!-- Core theme CSS (includes Bootstrap)-->
+<!-- signin.css -->
 <link href="/static/css/signin.css" rel="stylesheet" />
-<!-- Jquery link -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<!-- 공통 nav -->
@@ -77,7 +71,7 @@ $(document).ready(function(){
             usrPw: $('#usrPw').val(),
             usrPwChk: $('#usrPwChk').val(),
             usrPhone: $('#usrPhone').val()
-        	}; 
+        }; 
         
         $.ajax({
             type: "POST",
@@ -86,7 +80,6 @@ $(document).ready(function(){
             contentType: "application/json", 		   // 요청 데이터 타입 설정
             dataType: "json", 
             success: function(data) {
-            	
                 alert(data.message);
                 window.location.href = "/cafe/login";  // 회원가입 완료 후 로그인 페이지로 이동
             },

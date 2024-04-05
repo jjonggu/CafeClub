@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* 모바일 화면용 스타일 */
+@media (max-width: 576px) {
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    /* 각 열의 최소 너비 설정 */
+    .table-wrapper table {
+        min-width: 100%; /* 테이블이 가로로 모두 표시되도록 100%로 설정 */
+    }
+
+    /* 테이블 내용이 너무 좁은 경우 스크롤바를 숨기기 위해 테이블 내부의 td에 white-space: nowrap; 속성 추가 */
+    .table-wrapper table td {
+        white-space: nowrap;
+    }
+
+    /* 테이블 헤더가 세로로 표시되지 않도록 수정 */
+    .table-wrapper table th {
+        white-space: nowrap;
+    }
+}
+
+.table-wrapper {
+	margin-top:35px;
+	margin-bottom: 35px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	border-radius: 8px;
+	margin-left:20px;
+	margin-right:20px;
+	text-align: center;
+}
+
+.icon {
+	background-color: #1D376C;
+	padding: 6px;
+	color: white;
+	border-radius: 3px; 
+}
+
+

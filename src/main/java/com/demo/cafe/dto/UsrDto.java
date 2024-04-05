@@ -1,7 +1,5 @@
 package com.demo.cafe.dto;
 
-import java.util.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +16,7 @@ public class UsrDto {
 	private String usrName;
 	private String usrPw;
 	private String usrPhone;
-	private Date  signupDt;
+	// 테이블 DATE 타입으로 생성 시 String 
+	private String  signupDt;
 
 }

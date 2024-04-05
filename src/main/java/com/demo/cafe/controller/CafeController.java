@@ -13,17 +13,7 @@ public class CafeController {
 	 * Cafe 메인화면 View
 	 */
 	@GetMapping("/main")
-	public String CafeMain() {
+	public String Main() {
 		return "cafe/main";
 	}	
-	
-	/**
-	 * @2024-03-27 
-	 * Cafe 메뉴 View
-	 */
-	@GetMapping("/menu")
-	public String CafeMenu() {
-		return "cafe/menu";
-	}
-	
 }
